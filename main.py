@@ -1,10 +1,11 @@
 import networkx as nx
-import matplotlib.pyplot as plt
+import node as n
+import edge
+
 
 graph = nx.Graph()
 
 input = open("input_file.txt", "r")
-output = open("output_file.txt", "w")
 
 first_line = input.readline().split()
 
@@ -21,12 +22,5 @@ for line in input.readlines():
     graph.add_edge(line[0], line[1], color=line[2])
 
 input.close()
-output.close()
 
-G = nx.petersen_graph()
-
-plt.subplot(121)
-nx.draw(G, with_labels=True, font_weight='bold')
-plt.subplot(122)
-
-nx.draw_shell(G, nlist=[range(5, 10), range(5)], with_labels=True, font_weight='bold')
+print(list(nx.bfs_tree(graph,1).edges()))
