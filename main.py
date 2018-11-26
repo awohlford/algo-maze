@@ -22,6 +22,3 @@ for line in input.readlines():
 
 input.close()
 output.close()
-
-print(graph.nodes.data())
-print(graph.edges.data())
