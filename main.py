@@ -23,4 +23,4 @@ for line in input.readlines():
 
 input.close()
 
-print(list(nx.bfs_tree(graph,1).edges()))
+print(list(nx.bfs_edges(graph,1)))
