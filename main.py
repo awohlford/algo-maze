@@ -1,6 +1,6 @@
 import networkx as nx
 import node as n
-import edge
+import edge as e
 
 
 graph = nx.Graph()
@@ -23,4 +23,3 @@ for line in input.readlines():
 
 input.close()
 
-print(list(nx.bfs_edges(graph,1)))
