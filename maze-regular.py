@@ -1,6 +1,6 @@
-import node
-import edge
-import graph
+import Node
+import Edge
+import Graph
 
 input = open("input_file.txt", "r")
 output = open("output_file.txt", "w")
