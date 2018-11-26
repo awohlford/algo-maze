@@ -9,14 +9,17 @@ output = open("output_file.txt", "w")
 first_line = input.readline().split()
 graph.add_nodes_from([1, first_line[0]])
 
-input.readline()
+second_line = input.readline().split()
+for x in range(first_line[0]):
+    graph[x + 1]['color'] = second_line[x]
 
 for line in input.readlines():
     line = line.split()
     graph.add_edge(line[0], line[1])
+    graph[line[0]][line[1]]['color'] = line[2]
 
 input.close()
 output.close()
 
-print(graph.number_of_nodes())
-print(graph.number_of_edges())
+graph.nodes.data()
+graph.edges.data()
