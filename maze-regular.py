@@ -13,7 +13,7 @@ num = int(first_line[0])
 m = int(first_line[1])
 
 second_line = input.readline().split()
-for x in range(n - 1):
+for x in range(num - 1):
     nodes.append(n.Node(x + 1, second_line[x]))
     
 third_line = input.readline().split()
