@@ -10,7 +10,7 @@ first_line = input.readline().split()
 
 second_line = input.readline().split()
 for x in range(int(first_line[0])):
-    graph.add_node(x + 1, second_line[x])
+    graph.add_node((x + 1), second_line[x])
 
 for line in input.readlines():
     line = line.split()
