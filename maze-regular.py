@@ -5,8 +5,8 @@ nodes = []
 edges = []
 
 first_line = input.readline().split()
-n = first_line[0]
-m = first_line[1]
+n = int(first_line[0])
+m = int(first_line[1])
 
 second_line = input.readline().split()
 for x in range(n - 1):
