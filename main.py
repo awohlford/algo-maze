@@ -10,8 +10,8 @@ first_line = input.readline().split()
 graph.add_nodes_from([1, first_line[0]])
 
 second_line = input.readline().split()
-for x in range(int(first_line[0])):
-    graph[x + 1]['color'] = second_line[x]
+#for x in range(int(first_line[0])):
+    #graph[x + 1]['color'] = second_line[x]
 
 for line in input.readlines():
     line = line.split()
