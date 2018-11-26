@@ -9,7 +9,7 @@ output = open("output_file.txt", "w")
 first_line = input.readline().split()
 
 second_line = input.readline().split()
-for x in range(int(first_line[0])):
+for x in range(int(first_line[0]) - 1):
     graph.add_node((x + 1), color=second_line[x])
 
 for line in input.readlines():
