@@ -7,7 +7,7 @@ input = open("input_file.txt", "r")
 output = open("output_file.txt", "w")
 
 first_line = input.readline().split()
-graph.add_nodes([0, first_line[0]])
+graph.add_nodes_from([0, first_line[0]])
 
 input.readline()
 
