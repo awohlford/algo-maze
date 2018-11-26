@@ -16,7 +16,7 @@ second_line = input.readline().split()
 for line in input.readlines():
     line = line.split()
     graph.add_edge(line[0], line[1])
-    graph[line[0]][line[1]]['color'] = line[2]
+    #graph[line[0]][line[1]]['color'] = line[2]
 
 input.close()
 output.close()
