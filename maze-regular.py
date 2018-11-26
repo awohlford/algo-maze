@@ -1,6 +1,6 @@
-import Node
-import Edge
-import Graph
+import node as n
+import edge as e
+import graph as g
 
 input = open("input_file.txt", "r")
 output = open("output_file.txt", "w")
@@ -14,7 +14,7 @@ m = int(first_line[1])
 
 second_line = input.readline().split()
 for x in range(n - 1):
-    nodes.append(Node(x + 1, second_line[x]))
+    nodes.append(n.Node(x + 1, second_line[x]))
     
 third_line = input.readline().split()
 rocket = third_line[0]
@@ -22,11 +22,11 @@ lucky = third_line[1]
 
 for line in input.readlines():
     line = line.split()
-    edges.append(line[0], line[1], line[2])
+    edges.append(e.Edge(line[0], line[1], line[2]))
 
 input.close()
 output.close()
 
-graph = Graph(nodes, edges)
+graph = g.Graph(nodes, edges)
 
 print(nodes, edges)
