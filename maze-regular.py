@@ -29,4 +29,8 @@ output.close()
 
 graph = g.Graph(nodes, edges)
 
-print(nodes, edges)
+for node in graph.nodes:
+    print(node.num, node.color)
+
+for edge in graph.edges:
+    print(edge.start, edge.end, edge.color)
