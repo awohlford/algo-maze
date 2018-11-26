@@ -14,8 +14,7 @@ for x in range(int(first_line[0]) - 1):
 
 for line in input.readlines():
     line = line.split()
-    graph.add_edge(line[0], line[1])
-    #graph[line[0]][line[1]]['color'] = line[2]
+    graph.add_edge(line[0], line[1], color=line[2])
 
 input.close()
 output.close()
